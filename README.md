@@ -3,6 +3,11 @@
 BEAST is an interactive **browser-based voice assistant** built with **HTML**, **CSS**, and **JavaScript**. It uses the **Web Speech API** for speech recognition and text-to-speech, allowing you to control tasks and search information with simple voice commands.
 
 ---
+## 🌐 Live Demo
+
+👉 [Try BEAST here!](https://beast-voice-assistant.netlify.app/)
+
+---
 
 ## 🧩 **Project Overview**
 
