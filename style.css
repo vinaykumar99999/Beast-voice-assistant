@@ -1,0 +1,139 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;              /* Make sure body covers full viewport height */
+  width: 100%;                    /* Full width */
+  background-image: url('images/background.jpg');  /* Adjust path if needed */
+  background-size: cover;         /* Stretch to cover the entire area */
+  background-position: center;    /* Always center it */
+  background-repeat: no-repeat;   /* Don't repeat */
+  background-attachment: fixed;   /* Optional: keep image fixed while scrolling */
+
+  color: #fff;                    /* Light text for contrast */
+  font-family: Arial, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+
+#assistantSpeech {
+  font-size: 18px;
+  color: #38bdf8;
+  margin-top: 10px;
+}
+
+#answerBox {
+  background-color: #1e293b;   /* Dark blue-gray background */
+  color: #f8fafc;              /* Light text color */
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+#wikiCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+#wikiCard img {
+  width: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#wikiCard div {
+  flex: 1;
+  min-width: 200px;
+}
+
+
+#answerBox strong {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+  color: #38bdf8;              /* Light blue heading */
+}
+
+#answerText {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Animation keyframes */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the result card */
+#wikiCard {
+  animation: fadeSlideIn 0.5s ease forwards;
+}
+
+@media (max-width: 600px) {
+  #wikiCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #wikiCard img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  #wikiCard div {
+    width: 100%;
+  }
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+#transcript {
+  margin-top: 20px;
+  font-size: 20px;
+}

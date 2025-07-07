@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BEAST - Voice Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎙️ BEAST Voice Assistant</h1>
+  <div class="container">
+    <button id="speakBtn">🎤 Start Listening</button>
+
+    <p id="assistantSpeech" style="
+  font-family: 'Courier New', monospace;
+  font-size: 1.1em;
+  white-space: pre-wrap;
+  margin-top: 20px;
+   "></p>
+
+   
+    <p id="assistantSpeech" style="
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+    white-space: pre-wrap;
+    margin-top: 20px;
+    "></p>
+
+    <p id="assistantSpeech" style="font-family: 'Courier New', monospace; font-size: 1.1em; white-space: pre-wrap;"></p>
+    <p id="transcript">Say something...</p>
+    <p id="assistantSpeech"></p>
+    <p id="assistantSpeech" style="
+  font-family: 'Courier New', monospace;
+  font-size: 1.1em;
+  white-space: pre-wrap;
+  margin-top: 20px;
+   "></p>
+
+  </div>
+
+  <div id="answerBox" style="display: none; margin-top: 20px; max-width: 800px; margin-inline: auto;">
+      <strong style="font-size: 1.2em;">📖 Answer:</strong>
+
+      <div id="wikiCard" style="
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 10px;
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      ">
+
+        <!-- Image -->
+        <img id="answerImage" src="" alt="Result image"
+            style="display: none; width: 200px; flex-shrink: 0; border-radius: 8px; box-shadow: 0 1px 5px rgba(0,0,0,0.15);">
+
+        <!-- Text and Link -->
+        <div style="flex: 1; min-width: 200px;">
+          <p id="answerText" style="font-size: 1em; margin: 0; color: #333;"></p>
+          <p id="articleLink" style="margin-top: 10px;">
+            <a href="#" target="_blank" style="color: #0066cc; text-decoration: underline;">Read full article on Wikipedia</a>
+          </p>
+        </div>
+
+      </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
